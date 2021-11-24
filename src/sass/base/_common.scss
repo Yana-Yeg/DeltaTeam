@@ -1,0 +1,19 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--gap) * -1);
+    margin-left: calc(var(--gap) * -1);
+  }
+  /* класс для задания сетки - дети */
+  .grid-item {
+    flex-basis: calc(100% / var(--item) - var(--gap));
+    margin-top: var(--gap);
+    margin-left: var(--gap);
+  }
+
+body {
+    background: var(--background);
+    /* color: var(--primary-text-color); */
+    font-family: "DM sans", sans-serif;
+    letter-spacing: 0.04em;
+  }

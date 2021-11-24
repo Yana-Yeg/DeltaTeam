@@ -1,0 +1,58 @@
+:root {
+    // Main colors
+  --background: #FFFFFF;
+  --hero-bg: #FFB8CA;
+  --second-bg: #FFF5F6;
+  --burger-bg: #E17992;
+  --button-bg-main: #FFFFFF;
+  --button-bg-hover: #ECEBEB;
+  //Hero
+  --hero-white-text: #FFFFFF;
+  --hero-red-text: #D41443;
+  --hero-hover-btn-red: #C7133E;
+  // Products
+  --products-pink-text: #FFA5BA;
+  --products-red-text: #D41443;
+  --products-white-text: #FFFFFF;
+  // About
+  --about-pink-text: #FFA5BA;
+  --about-red-text: #D41443;
+  --about-black-text: #000000;
+  --about-grey-text: #907E82;
+  // Advantages
+  --advantages-red-text: #D41443;
+  --advantages-black-text: #000000;
+  // Slider
+  --slider-background: #FAFAFA;
+  --slider-black-text: #000000;
+  --slider-red-accent: #D31342;
+  --slider-points-accent: #C7133E;
+  // Contacts
+  --contacts-white-text: #FFFFFF;
+  --contacts-cafe-bg: #F0D1A5;
+  --contacts-foodtrack-bg: #C2E297;
+  --contacts-black-text: #000000;
+  --contacts-grey-text: #907E82;
+  --contacts-pink-text: #FFA5BA;
+  --contacts-items-bg: #FFFFFF;
+  // Footer
+  --footer-red-text: #D41443;
+  --footer-white-text: #FFFFFF;
+  --footer-pink-text: #FEA5BB;
+  --footer-black-text: #000000;
+  --footer-grey-text: #907E82;
+  --footer-icons-white: #FFFFFF;
+  --footer-icons-bg: #FEA5BB;
+  --footer-icons-hover-bg: #D41443;
+  --footer-btn-hover-grey: #ECEBEB;
+  --footer-btn-hover-red: #D41342;
+  // Burger
+  --burger-red-text: #D41443;
+  --burger-white-text: #FFFFFF;
+
+
+    /* для задания сетки в классы grid */
+    --gap: 30px;
+    --item: 1;
+  }
+  
