@@ -153,6 +153,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: var(--products-white-text);
+    border-style: none;
 
     &:focus {
         background-color: var(--products-red-text);
@@ -170,6 +171,14 @@
 //________________________________медиа правила для PAD____________
 
 @media screen and (min-width: 768px) {
+    .btn:hover {
+        background-color: var(--products-red-text);
+
+        .btn__icon {
+            fill: var(--products-white-text);
+        }
+    }
+
     .products__title {
         font-size: 48px;
         line-height: calc(55 / 48);
@@ -247,6 +256,7 @@
 
 // _______________Медиа правила для DESKTOP________________
 @media screen and (min-width: 1280px) {
+    
     .products {
         padding-top: 127px;
         padding-bottom: 119px;
