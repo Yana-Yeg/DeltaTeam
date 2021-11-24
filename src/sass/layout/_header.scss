@@ -1,0 +1,20 @@
+.header {
+  background-color: #ffb8ca;
+}
+.header-wraper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 6px;
+}
+.burger-menu__btn {
+  //   width: 40px;
+  //   height: 40px;
+  //   background-color: #fff;
+  border: none;
+  background-color: #ffb8ca;
+  //   fill: #d41443;
+}
+.burger-menu__icon {
+  fill: #d41443;
+}
