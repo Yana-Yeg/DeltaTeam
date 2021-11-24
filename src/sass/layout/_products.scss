@@ -1,0 +1,165 @@
+.products {
+    padding-top: 121px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__text {
+    position: relative;
+    text-align: center;
+    font-family: Titan One, serif;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    margin-bottom: 15px;
+    color: var(--products-pink-text);
+}
+
+.products__title {
+    font-family: Titan One, serif;
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--products-red-text);
+    margin-bottom: 144px;
+}
+// _______________________Карточка продукта________________
+.products{
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--products-pink-text);
+        border-radius: 24px;
+        padding-top: 161px;
+        padding-bottom: 41px;
+        margin-bottom: 130px;
+        position: relative;
+
+        &:nth-child(1)::before {
+            content: "";
+            position: absolute;
+            top: -115px;
+            width: 249px;
+            height: 252px;
+            background-image: url("../images/products/prod1-mob-1x.png");
+            background-size: 249px 252px;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url("../images/products/prod1-mob-2x.png");
+            }
+        }
+
+        &:nth-child(2)::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -115px;
+            width: 249px;
+            height: 252px;
+            background-image: url("../images/products/prod2-mob-1x.png");
+            background-size: 249px 252px;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url("../images/products/prod2-mob-2x.png");
+            }
+        }
+
+        &:nth-child(3)::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -115px;
+            width: 249px;
+            height: 252px;
+            background-image: url("../images/products/prod3-mob-1x.png");
+            background-size: 249px 252px;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url("../images/products/prod3-mob-2x.png");
+            }
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 98px;
+        }
+
+        .item__title {
+            font-family: Titan One;
+            font-size: 20px;
+            line-height: calc(23 / 20);
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--products-white-text);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.products {
+    .item__point {
+        position: relative;
+        width: 6px;
+        height: 6px;
+        background-color: var(--products-white-text);
+        border-radius: 50%;
+        margin-bottom: 30px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -10px;
+            background-color: inherit;
+            border-radius: 50%;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 10px;
+            background-color: inherit;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+.item__text {
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--products-white-text);
+    position: relative;
+}
+// ____________________________BTN PRODUCTS__________________
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--products-white-text);
+
+    &:focus {
+        background-color: var(--products-red-text);
+
+        .btn__icon {
+            fill: var(--products-white-text);
+        }
+    }
+}
+.btn__icon {
+    fill: var(--products-red-text);
+}
