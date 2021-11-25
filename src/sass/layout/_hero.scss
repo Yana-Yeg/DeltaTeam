@@ -14,24 +14,37 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+  }
 }
 .hero-title__accent {
   font-size: 30px;
   line-height: 1.3;
   color: #d41443;
 }
-.title-wraper {
+.title-btn-wraper {
   position: absolute;
   top: 193px;
   left: 20px;
   z-index: 5;
+  @media screen and (min-width: 768px) {
+    top: 102px;
+    left: 34px;
+  }
 }
-.btn-wraper {
-  position: absolute;
-  left: 20px;
-  top: 318px;
-  z-index: 6;
-}
+// .btn-wraper {
+//   position: absolute;
+//   left: 20px;
+//   top: 318px;
+//   z-index: 6;
+// }
 .hero-products-btn {
   font-size: 8px;
   line-height: 10px;
@@ -67,9 +80,86 @@
   left: 16px;
   border-radius: 50%;
   background-color: #ffa5ba;
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: 31px;
+    left: 307px;
+  }
 }
 .logo {
   position: absolute;
   top: 9px;
   left: 81px;
+}
+.about-us__list {
+  position: absolute;
+  top: 94px;
+  right: 34px;
+}
+.about-us__item {
+  position: relative;
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 13px;
+
+  color: #d41443;
+  z-index: 7;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:after {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    content: '';
+    width: 16px;
+    height: 16px;
+
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.about-us__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+
+  color: #ffffff;
+}
+.jug-milk {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 34px;
+  bottom: 28px;
+}
+.jug-milk__img {
+  width: 124px;
+  height: 126px;
+}
+.jug-milk__description {
+  display: block;
+  width: 114px;
+  height: 48px;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.5;
+
+  color: #ffffff;
+}
+.img-container {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
 }
