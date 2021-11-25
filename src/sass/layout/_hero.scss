@@ -1,0 +1,75 @@
+.hero {
+  background: #ffb8ca;
+  height: 502px;
+  overflow: hidden;
+}
+.hero-title {
+  //   position: absolute;
+  width: 218px;
+
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.hero-title__accent {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #d41443;
+}
+.title-wraper {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  z-index: 5;
+}
+.btn-wraper {
+  position: absolute;
+  left: 20px;
+  top: 318px;
+  z-index: 6;
+}
+.hero-products-btn {
+  font-size: 8px;
+  line-height: 10px;
+
+  width: 61.2px;
+  height: 24px;
+  margin-right: 8px;
+
+  color: #ffffff;
+  background: #d41443;
+  border-radius: 20px;
+  border: none;
+}
+.hero-made-btn {
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: #d41443;
+
+  width: 82.8px;
+  height: 24px;
+
+  border: none;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.ice-cream-container {
+  position: relative;
+  width: 346px;
+  height: 344px;
+  top: 83px;
+  left: 16px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+.logo {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+}
