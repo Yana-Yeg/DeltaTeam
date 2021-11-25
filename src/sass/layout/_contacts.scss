@@ -1,15 +1,10 @@
 .section-contacts {
-    padding-top: 45px;
-    padding-bottom: 56px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 10%);
-    background-size: 100vw;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 245, 246, 1) 30%);
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 56px;
 }
 
 .contacts {
@@ -107,16 +102,9 @@
     border-radius: 22px;
     border: none;
     color: var(--contacts-white-text);
-    margin-top: 34px;
-    margin-bottom: 10px;
-
-    &:hover {
-        background-color: #B22447;
-    }
 
     .btn__icon {
         stroke: white;
-        margin-left: 10px;
     }
 }
 
@@ -128,12 +116,7 @@
     color: var(--contacts-btn-gr);
     background-color: var(--contacts-white-text);
 
-    &:hover {
-        background-color: #ECEBEB;
-    }
-
     .btn__icon {
-        margin-left: 15px;
         stroke: var(--contacts-btn-gr);
     }
 }
