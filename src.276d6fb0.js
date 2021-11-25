@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/customer-reviews/cr1-1x.png":[["cr1-1x.862c65fe.png","aijK"],"aijK"],"./../images/customer-reviews/cr1-2x.png":[["cr1-2x.ebdf2f74.png","NZUt"],"NZUt"],"./../images/customer-reviews/cr2-1x.png":[["cr2-1x.fc440398.png","uG7h"],"uG7h"],"./../images/customer-reviews/cr2-2x.png":[["cr2-2x.d97fba3b.png","x4sM"],"x4sM"],"./../images/customer-reviews/cr3-1x.png":[["cr3-1x.ddbede60.png","LqFL"],"LqFL"],"./../images/customer-reviews/cr3-2x.png":[["cr3-2x.575c8b83.png","cKtT"],"cKtT"],"./../images/customer-reviews/quotes.svg":[["quotes.34a01792.svg","LBYs"],"LBYs"],"./../images/customer-reviews/home.svg":[["home.99b40e48.svg","Kagb"],"Kagb"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.93e41a58.js.map
+//# sourceMappingURL=/parcel-project-template/src.276d6fb0.js.map
