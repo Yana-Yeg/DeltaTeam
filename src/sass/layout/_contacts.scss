@@ -1,7 +1,5 @@
 .contacts {
     padding-top: 43px;
-    padding-left: 30px;
-    padding-left: 30px;
     padding-bottom: 56px;
 }
 
@@ -18,6 +16,9 @@
     }
 
     .item__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80px;
         height: 16px;
         font-family: DM Sans;
@@ -27,9 +28,61 @@
         letter-spacing: 0.04em;
         color: var(--contacts-white-text);
         background-color: var(--contacts-cafe-bg);
+        border-radius: 4px;
+        text-transform: uppercase;
+        vertical-align: middle;
     }
 }
-.infocity{
+
+.infocity {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 25px;
+}
+
+.infocity__name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.infocity_text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(18/ 12);
+    color: var(--contacts-grey-text);
+}
+
+.worktime {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 25px;
+}
+
+.worktime__day {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: var(--contacts-black-text);
+}
+
+.worktime__time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    color: var(--contacts-pink-text);
+}
+
+.info__tel, .info__mail {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: var(--contacts-grey-text);
 }
