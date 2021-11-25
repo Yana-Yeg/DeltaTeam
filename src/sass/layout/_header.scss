@@ -4,6 +4,7 @@
 .header-wraper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   // @media screen and (min-width: 480px) {
   //   display: flex;
   //   justify-content: space-between;
@@ -13,23 +14,30 @@
   margin-top: 6px;
 }
 .burger-btn-open {
-  width: 20px;
-  height: 12px;
   border: none;
   background-color: #ffb8ca;
 }
 .burger-btn-open__icon {
   stroke: #d41443;
 }
+.buy-btn-header {
+  display: none;
+
+  border: none;
+  background-color: #ffb8ca;
+  color: #d41443;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 14px;
+  }
+}
+
 .burger-menu {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background: #e17992;
 
-  // display: flex;
-  position: relative;
-  // flex-direction: column;
-  // justify-content: space-around;
   padding-top: 60px;
 }
 .burger-menu__top {
@@ -46,7 +54,7 @@
 .burger-btn-close__icon {
   stroke: #ffffff;
 }
-.buy-btn {
+.buy-btn-burger {
   width: 209px;
   height: 44px;
   background: #ffffff;
@@ -61,7 +69,7 @@
   color: #d41443;
   margin-bottom: 19px;
 }
-.buy-btn__icon {
+.buy-btn-burger__icon {
   fill: #d41443;
   margin-left: 14px;
 }
@@ -79,5 +87,9 @@
   line-height: 18px;
   padding-left: 21px;
 
-  color: #d41443;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
