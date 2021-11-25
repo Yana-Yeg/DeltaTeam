@@ -34,6 +34,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 280px;
         background-color: var(--products-pink-text);
         border-radius: 24px;
         padding-top: 161px;
@@ -134,11 +135,12 @@
 }
 
 .item__text {
+    height: 125px;
     margin-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
     font-family: DM Sans;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: calc(21 / 14);
     text-align: center;
@@ -198,10 +200,18 @@
         padding-top: 122px;
         padding-bottom: 112px;
 
+        .item__text {
+            margin-bottom: 40px;
+            padding-left: 11px;
+            padding-right: 11px;
+        }
+
         .item {
             width: 220px;
             margin-right: 20px;
             margin-bottom: auto;
+            padding-top: 152px;
+            padding-bottom: 40px;
 
             &:nth-child(1)::before {
                 content: "";
@@ -256,7 +266,6 @@
 
 // _______________Медиа правила для DESKTOP________________
 @media screen and (min-width: 1280px) {
-    
     .products {
         padding-top: 127px;
         padding-bottom: 119px;
@@ -279,18 +288,30 @@
         .item__title {
             font-size: 30px;
             line-height: calc(34 / 30);
-            margin-bottom: 30px;
+            margin-bottom: 32px;
+        }
+
+        .item__text {
+            margin-bottom: 62px;
+            padding-left: 44px;
+            padding-right: 44px;
+        }
+
+        .item__point {
+            margin-bottom: 32px;
         }
 
         .item {
             width: 335px;
             margin-right: 24px;
             margin-bottom: auto;
+            padding-top: 163px;
+            padding-bottom: 50px;
 
             &:nth-child(1)::before {
                 content: "";
                 position: absolute;
-                top: -115px;
+                top: -150px;
                 width: 249px;
                 height: 252px;
                 background-image: url("../images/products/prod1-desk-1x.png");
@@ -305,7 +326,7 @@
                 content: "";
                 display: block;
                 position: absolute;
-                top: -115px;
+                top: -150px;
                 width: 249px;
                 height: 252px;
                 background-image: url("../images/products/prod2-desk-1x.png");
@@ -324,7 +345,7 @@
                 content: "";
                 display: block;
                 position: absolute;
-                top: -115px;
+                top: -150px;
                 width: 249px;
                 height: 252px;
                 background-image: url("../images/products/prod3-desk-1x.png");
