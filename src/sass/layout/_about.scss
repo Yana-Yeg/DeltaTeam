@@ -14,18 +14,19 @@
 }
 .background-img {
   position: absolute;
-  top: 529px;
+  top: 80%;
   left: 0;
   width: 320px;
   width: 100%;
   @media screen and(min-width:1280px) {
-    top: 342px;
+    top: 50%;
   }
 }
 .bg-img {
   width: 100%;
   display: block;
   z-index: 0;
+
   @media screen and(min-width:768px) {
     display: none;
   }
@@ -41,6 +42,7 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 15px;
   @media screen and(min-width:768px) {
     font-size: 26px;
     line-height: 1.15;
@@ -80,8 +82,7 @@
 
 .about-section__text-wrapper {
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 220px;
   z-index: 1;
   position: relative;
   @media screen and(min-width:768px) {
