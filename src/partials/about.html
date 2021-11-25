@@ -1,31 +1,47 @@
 <section class="container about-section">
+  <div class="background-img">
+    <picture>
+      <source
+        srcset="./images/about/ab_bg-desk-1x.png 1x, ./images/about/ab_bg-desk-2x.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/about/ab_bg-mob-1x.png 1x, ./images/about/ab_bg-mob-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+
+      <img src="./images/about/ab_bg-desk-1x.png" alt="team2" class="bg-img" />
+    </picture>
+  </div>
   <p class="about-section__uptitle">tradition and love</p>
   <h2 class="about-section__title">how it’s made?</h2>
 
   <div class="about-section__wrapper">
-    <picture class="photo">
-      <source
-        srcset="./images/about/cow-desc.png 1x, ./images/about/ab1-desk-2x.png 2x"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="./images/about/cow-tab.png 1x, ./images/about/ab1-tab-2x.png 2x"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="./images/about/cow-mob.png 1x, ./images/about/ab1-mob-2x..png 2x"
-        media="(min-width: 320px)"
-      />
+    <div class="about-section__photo">
+      <picture>
+        <source
+          srcset="./images/about/cow-desc.png 1x, ./images/about/ab1-desk-2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/about/cow-tab.png 1x, ./images/about/ab1-tab-2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/cow-mob.png 1x, ./images/about/ab1-mob-2x..png 2x"
+          media="(min-width: 320px)"
+        />
 
-      <img src="./images/about/ab1-desk-1x.png" alt="team2" />
-    </picture>
-    <img src="" alt="" width="" />
+        <img src="./images/about/ab1-desk-1x.png" alt="team2" class="about-photo" />
+      </picture>
+    </div>
+
     <div class="about-section__text-wrapper">
-      <h3>
+      <h3 class="text-wrapper__title">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
         lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
       </h3>
-      <p>
+      <p class="text-wrapper__text">
         Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
         in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
         maximus. Cras massa nibh, tincidunt. <span>Aliquam erat volutpat. Aenean accumsan.</span>
@@ -37,8 +53,8 @@
         eligendi! Cumque velit eaque veritatis!
       </p>
       <label for="input-text">
-        <span class="opened">Читать подробнее</span>
-        <span class="closed">Свернуть</span>
+        <span class="opened">Read more ></span>
+        <span class="closed">Roll up</span>
       </label>
     </div>
   </div>
