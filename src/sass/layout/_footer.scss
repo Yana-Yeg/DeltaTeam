@@ -60,15 +60,17 @@
 
 .footer_svg-githab {
   fill: var(--footer-icons-white);
-  width: 18.82px;
-  height: 18.82px;
+  // width: 18.82px;
+  // height: 18.82px;
+  width: 20px;
+  height: 20px;
   @media screen and (min-width: 768px) {
     width: 20px;
     height: 20px;
-    margin-left: 1.5px;
+    // margin-left: 1.5px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 1.0px;
+    // margin-left: 1.0px;
   }
 }
 
@@ -122,6 +124,10 @@
   transition-duration: 250ms;
   transition-timing-function: ease;
   transition-delay: 0;
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;;
+  }
 
   &:hover,
   &:focus{
