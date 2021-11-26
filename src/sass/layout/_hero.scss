@@ -1,5 +1,5 @@
 .hero {
-  background: #ffb8ca;
+  background: var(--hero-bg);
   height: 502px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -21,7 +21,7 @@
 
   margin-bottom: 19px;
 
-  color: #ffffff;
+  color: var(--button-bg-main);
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.13;
@@ -38,7 +38,7 @@
 .hero-title__accent {
   font-size: 48px;
   line-height: 0.95;
-  color: #d41443;
+  color: var(--hero-red-text);
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 0.91;
@@ -71,10 +71,17 @@
   height: 24px;
   margin-right: 8px;
 
-  color: #ffffff;
-  background: #d41443;
+  color: var(--button-bg-main);
+  background: var(--hero-red-text);
   border-radius: 20px;
   border: none;
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: var(--hero-hover-btn-red);
+    }
+  }
   @media screen and (min-width: 1280px) {
     width: 102px;
     height: 40px;
@@ -86,7 +93,7 @@
   font-size: 8px;
   line-height: 1.25;
 
-  color: #d41443;
+  color: var(--hero-red-text);
 
   width: 82.8px;
   height: 24px;
@@ -94,6 +101,13 @@
   border: none;
   background: #ffffff;
   border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: var(--button-bg-hover);
+    }
+  }
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -161,7 +175,7 @@
 
   margin-bottom: 13px;
 
-  color: #d41443;
+  color: var(--hero-red-text);
   z-index: 7;
   &:last-child {
     margin-bottom: 0;
@@ -191,14 +205,11 @@
   }
 }
 .about-us__description {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 8px;
   line-height: 10px;
   text-align: right;
 
-  color: #ffffff;
+  color: var(--hero-white-text);
 }
 .jug-milk {
   display: none;
@@ -229,7 +240,7 @@
 
   margin-bottom: 7px;
 
-  color: #ffffff;
+  color: var(--hero-white-text);
   @media screen and (min-width: 768px) {
     margin-bottom: 7px;
   }
@@ -256,11 +267,15 @@
     width: 26px;
     height: 26px;
   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 .jug-milk__icon {
   fill: #d41443;
 }
-.img-container {
+.girl-img-container {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;

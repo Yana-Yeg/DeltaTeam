@@ -4,22 +4,11 @@
 .header-wraper {
   position: relative;
 }
-// .header-wraper {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 6px;
-//   @media screen and (min-width: 768px) {
-//     margin-top: 37px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     margin-top: 37px;
-//     align-items: center;
-//   }
-// }
 .logo {
   position: absolute;
   top: 6px;
   left: 20px;
+
   @media screen and (min-width: 480px) {
     top: 6px;
     left: 20px;
@@ -35,6 +24,7 @@
 }
 .nav {
   display: none;
+
   @media screen and (min-width: 1280px) {
     display: flex;
     position: absolute;
@@ -66,8 +56,10 @@
   position: absolute;
   top: 25px;
   right: 20px;
+
   border: none;
   background-color: var(--hero-bg);
+
   @media screen and (min-width: 768px) {
     right: 210px;
     top: 52px;
@@ -75,6 +67,11 @@
 
     border-radius: 50%;
     background-color: #ffa5ba;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -112,27 +109,43 @@
 
     background: #ffffff;
     border-radius: 22px;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: var(--button-bg-hover);
+    }
   }
 }
 .buy-btn-header__icon {
   margin-left: 12px;
+
   @media screen and (min-width: 1280px) {
     margin-left: 14px;
   }
 }
 .burger-menu {
-  position: absolute;
+  position: fixed;
   z-index: 50;
-  right: -240px;
+  right: 0;
   top: 0;
   width: 250px;
   height: 100vh;
   background: var(--burger-bg);
 
   padding-top: 60px;
-  transform: translateX(-280px);
-  transition: transform 3000ms linear;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
 }
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
 .burger-menu__top {
   display: flex;
   justify-content: center;
@@ -144,6 +157,10 @@
 
   background: var(--burger-bg);
   border: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 .burger-btn-close__icon {
   stroke: #ffffff;
@@ -162,6 +179,10 @@
   color: #d41443;
 
   margin-bottom: 19px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 .buy-btn-burger__icon {
   fill: var(--hero-red-text);
@@ -188,12 +209,3 @@
     color: var(--hero-red-text);
   }
 }
-// @keyframes move {
-//   0% {
-//     transform: translatex(100%);
-//   }
-
-//   100% {
-//     transform: translatex(-100%);
-//   }
-// }
