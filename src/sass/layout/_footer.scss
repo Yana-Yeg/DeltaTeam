@@ -24,13 +24,13 @@
   text-transform: uppercase;
   color: var(--footer-pink-text);
   margin-bottom: 20px;
-  margin-top: 5px;
+ 
   width: 230px;
   letter-spacing: 0em;
   @media screen and (min-width: 768px) {
     letter-spacing: 0.04em;
     margin-bottom: 16px;
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 26px;
     line-height: 1.15;
     width: 340px;
@@ -40,7 +40,7 @@
     width: 470px;
     font-size: 30px;
     line-height: 1.13;
-    padding-top: 0px;
+    padding-top: 3px;
   }
 }
 
@@ -60,7 +60,7 @@
     margin-bottom: 95px;
   }
   @media screen and (min-width: 1280px) {
-    width: 475px; 
+    width: 477px; 
     font-size: 58px;
     line-height: 1.13;
     margin-bottom: 100px;
