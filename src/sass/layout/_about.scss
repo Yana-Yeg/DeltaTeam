@@ -88,10 +88,12 @@
   }
 }
 .about-section__text-wrapper {
-  width: 220px;
+  min-width: 220px;
   z-index: 1;
   margin: 0 auto;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and(min-width:768px) {
     display: flex;
     flex-direction: column;
