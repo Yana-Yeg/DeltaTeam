@@ -5,21 +5,25 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 98px;
+
     @media screen and (min-width: 768px) {
         padding-top: 122px;
         padding-bottom: 112px;
     }
+
     @media screen and (min-width: 1280px) {
         padding-top: 127px;
         padding-bottom: 119px;
     }
 }
+
 .products-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 .products__text {
     position: relative;
     text-align: center;
@@ -28,16 +32,19 @@
     line-height: calc(21 / 18);
     margin-bottom: 15px;
     color: var(--products-pink-text);
+
     @media screen and (min-width: 768px) {
         font-size: 26px;
         line-height: calc(30 / 26);
     }
+
     @media screen and (min-width: 1280px) {
         font-size: 30px;
         line-height: 34px;
         letter-spacing: 0.04em;
     }
 }
+
 .products__title {
     font-family: Titan One, serif;
     font-size: 34px;
@@ -47,11 +54,13 @@
     text-transform: uppercase;
     color: var(--products-red-text);
     margin-bottom: 144px;
+
     @media screen and (min-width: 768px) {
         font-size: 48px;
         line-height: calc(55 / 48);
         margin-bottom: 150px;
     }
+
     @media screen and (min-width: 1280px) {
         font-size: 58px;
         line-height: calc(66 / 58) 66px;
@@ -59,11 +68,13 @@
         margin-bottom: 260px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .products__list {
         display: flex;
     }
 }
+
 // _______________________Карточка продукта________________
 .products {
     .item {
@@ -77,15 +88,19 @@
         padding-bottom: 41px;
         margin-bottom: 130px;
         position: relative;
+
         &:nth-child(1) {
-            background-color: var(--products-pink-text);
+            background-color: #FFB8CA;
         }
+
         &:nth-child(2) {
             background-color: #F0D1A5;
         }
+
         &:nth-child(3) {
             background-color: #C2E297;
         }
+
         &:nth-child(1)::before {
             content: "";
             position: absolute;
@@ -94,10 +109,12 @@
             height: 252px;
             background-image: url("../images/products/prod1-mob-1x.png");
             background-size: 249px 252px;
+
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url("../images/products/prod1-mob-2x.png");
             }
         }
+
         &:nth-child(2)::before {
             content: "";
             display: block;
@@ -107,10 +124,12 @@
             height: 252px;
             background-image: url("../images/products/prod2-mob-1x.png");
             background-size: 249px 252px;
+
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url("../images/products/prod2-mob-2x.png");
             }
         }
+
         &:nth-child(3)::before {
             content: "";
             display: block;
@@ -120,13 +139,16 @@
             height: 252px;
             background-image: url("../images/products/prod3-mob-1x.png");
             background-size: 249px 252px;
+
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url("../images/products/prod3-mob-2x.png");
             }
         }
+
         &:nth-child(3) {
             margin-bottom: 0px;
         }
+
         .item__title {
             font-family: Titan One;
             font-size: 20px;
@@ -136,12 +158,14 @@
             text-transform: uppercase;
             color: var(--products-white-text);
             margin-bottom: 30px;
+
             @media screen and (min-width: 1280px) {
                 font-size: 30px;
                 line-height: calc(34 / 30);
                 margin-bottom: 32px;
             }
         }
+
         @media screen and (min-width: 768px) {
             min-width: auto;
             width: 220px;
@@ -149,6 +173,7 @@
             margin-bottom: auto;
             padding-top: 152px;
             padding-bottom: 40px;
+
             &:nth-child(1)::before {
                 content: "";
                 position: absolute;
@@ -162,6 +187,7 @@
                     background-image: url("../images/products/prod1-tab-2x.png");
                 }
             }
+
             &:nth-child(2)::before {
                 content: "";
                 display: block;
@@ -176,9 +202,11 @@
                     background-image: url("../images/products/prod2-tab-2x.png");
                 }
             }
+
             &:nth-child(3) {
                 margin-right: 0px;
             }
+
             &:nth-child(3)::before {
                 content: "";
                 display: block;
@@ -188,11 +216,13 @@
                 height: 224px;
                 background-image: url("../images/products/prod3-tab-1x.png");
                 background-size: 220px 224px;
+
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                     background-image: url("../images/products/prod3-tab-2x.png");
                 }
             }
         }
+
         @media screen and (min-width: 1280px) {
             min-width: auto;
             width: 330px;
@@ -200,6 +230,7 @@
             margin-bottom: auto;
             padding-top: 163px;
             padding-bottom: 50px;
+
             &:nth-child(1)::before {
                 content: "";
                 position: absolute;
@@ -208,10 +239,12 @@
                 height: 335px;
                 background-image: url("../images/products/prod1-desk-1x.png");
                 background-size: 335px 335px;
+
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                     background-image: url("../images/products/prod1-desk-2x.png");
                 }
             }
+
             &:nth-child(2)::before {
                 content: "";
                 display: block;
@@ -226,9 +259,11 @@
                     background-image: url("../images/products/prod2-desk-2x.png");
                 }
             }
+
             &:nth-child(3) {
                 margin-right: 0px;
             }
+
             &:nth-child(3)::before {
                 content: "";
                 display: block;
