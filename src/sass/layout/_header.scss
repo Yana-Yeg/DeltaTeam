@@ -1,5 +1,8 @@
 .header {
   background-color: var(--hero-bg);
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
 }
 .header-wraper {
   display: flex;
@@ -8,6 +11,9 @@
 .logo {
   margin-top: 6px;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
   @media screen and (min-width: 1280px) {
     margin-top: 37px;
   }
@@ -17,6 +23,9 @@
   @media screen and (min-width: 1280px) {
     margin-top: 52px;
     display: flex;
+    position: absolute;
+    z-index: 20;
+    left: 337px;
   }
 }
 .nav__item {
@@ -41,6 +50,16 @@
 .burger-btn-open {
   border: none;
   background-color: var(--hero-bg);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 524px;
+    top: 52px;
+    z-index: 30;
+
+    border-radius: 50%;
+    background-color: #ffa5ba;
+  }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
