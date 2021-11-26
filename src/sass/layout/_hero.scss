@@ -2,15 +2,19 @@
   background: #ffb8ca;
   height: 502px;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
 }
 .hero-title {
-  //   position: absolute;
   width: 218px;
 
   font-family: Titan One;
   font-size: 26px;
   line-height: 1.15;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -21,6 +25,9 @@
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
+    width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
     margin-bottom: 25px;
   }
 }
@@ -28,6 +35,12 @@
   font-size: 30px;
   line-height: 1.3;
   color: #d41443;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 0.89;
+    text-transform: uppercase;
+  }
 }
 .title-btn-wraper {
   position: absolute;
@@ -38,13 +51,11 @@
     top: 102px;
     left: 34px;
   }
+  @media screen and (min-width: 1280px) {
+    top: 171px;
+    left: 115px;
+  }
 }
-// .btn-wraper {
-//   position: absolute;
-//   left: 20px;
-//   top: 318px;
-//   z-index: 6;
-// }
 .hero-products-btn {
   font-size: 8px;
   line-height: 10px;
@@ -57,6 +68,12 @@
   background: #d41443;
   border-radius: 20px;
   border: none;
+  @media screen and (min-width: 1280px) {
+    width: 102px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 .hero-made-btn {
   font-size: 8px;
@@ -70,6 +87,13 @@
   border: none;
   background: #ffffff;
   border-radius: 20px;
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .ice-cream-container {
@@ -86,16 +110,34 @@
     top: 31px;
     left: 307px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    left: 267px;
+  }
 }
-.logo {
+.ice-cream {
   position: absolute;
   top: 9px;
   left: 81px;
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: 71px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 56px;
+    left: 119px;
+  }
 }
 .about-us__list {
   position: absolute;
   top: 94px;
   right: 34px;
+  @media screen and (min-width: 1280px) {
+    top: 160px;
+    right: 115px;
+  }
 }
 .about-us__item {
   position: relative;
@@ -104,7 +146,6 @@
   line-height: 1.14;
   text-align: right;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 
   margin-bottom: 13px;
 
@@ -117,7 +158,7 @@
     display: inline-block;
     position: absolute;
     top: -2px;
-    right: -6px;
+    right: -10px;
     content: '';
     width: 16px;
     height: 16px;
@@ -125,6 +166,16 @@
     background: #ffffff;
     border-radius: 50%;
     z-index: -1;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+    &:after {
+      top: -4px;
+      right: -18px;
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 .about-us__description {
@@ -138,28 +189,65 @@
   color: #ffffff;
 }
 .jug-milk {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 34px;
-  bottom: 28px;
-}
-.jug-milk__img {
-  width: 124px;
-  height: 126px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 34px;
+    top: 245px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    top: 429px;
+  }
 }
 .jug-milk__description {
   display: block;
   width: 114px;
-  height: 48px;
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.5;
 
+  margin-bottom: 8px;
+
   color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.4;
+
+    width: 200px;
+  }
+}
+.jug-milk__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+.jug-milk__icon {
+  fill: #d41443;
 }
 .img-container {
-  position: absolute;
-  bottom: 0;
-  right: 34px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 266px;
+    right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 433px;
+    right: 109px;
+  }
 }
