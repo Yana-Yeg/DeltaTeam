@@ -1,10 +1,12 @@
 .contacts {
-    padding-top: 43px;
-    padding-bottom: 56px;
+    padding-top: 45px;
+    padding-bottom: 55px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 10%);
 
     @media screen and (min-width: 768px) {
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, rgba(255, 245, 246, 1) 15%);
+        padding-bottom: 80px;
+        padding-top: 60px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -12,6 +14,8 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
+        padding-bottom: 80px;
+        padding-top: 65px;
     }
 }
 
@@ -285,58 +289,104 @@
     pointer-events: none;
 }
 
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     opacity: 1;
-//     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     opacity: 1;
-//     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.our-location__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // border-radius: 20px;
+    background-color: #C2E297;
+}
 
-// .our-location__modal {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     background-color: white;
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 4px;
-//     transform: translate(-50%, -50%) scale(1);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.our-location-close {
+    position: relative;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--contacts-white-text);
+    border-color: #C2E297;
 
-// .our-location-close{
-//     display: block;
-//     width: 30px;
-//     height: 30px;
-// }
-// .close {
-//     width: 25px;
-//     height: 25px;
-//     stroke: var(--contacts-btn-gr);
-// }
+    &:hover, &:focus {
+        background-color: #79a83c;
+        border-color: var(--contacts-white-text);
 
-// .modal-location {
-//     display: flex;
-//     flex-direction: column;
-//     margin: 0 auto;
-//     align-items: center;
-//     padding: 15px;
-//     background-color: #fff;
-// }
+        .contacts-close {
+            fill: var(--contacts-white-text);
+        }
+    }
+}
+
+.contacts-close {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    fill: #C2E297;
+}
+
+.modal-location {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding: 15px;
+    background-color: inherit;
+}
+
+.modal-loc-text {
+    font-size: 20px;
+    line-height: calc(30 / 25);
+    margin-bottom: 30px;
+    color: var(--contacts-white-text);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.franchize__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    background-color: #C2E297;
+}
+
+.our-franchize-close {
+    position: relative;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--contacts-white-text);
+    border-color: #C2E297;
+
+    &:hover, &:focus {
+        background-color: #79a83c;
+        border-color: var(--contacts-white-text);
+
+        .contacts-close {
+            fill: var(--contacts-white-text);
+        }
+    }
+}
