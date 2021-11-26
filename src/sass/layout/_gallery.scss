@@ -102,8 +102,10 @@
   }
 }
 
-.gallery__item:hover {
-  transform: scale(1.2);
-  transition-property: transform;
-  transition-duration: 500ms;
+.gallery__item {
+  &:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
 }
