@@ -66,9 +66,6 @@
   position: absolute;
   top: 25px;
   right: 20px;
-  // transform: translateY(0);
-  // transition: transform 300ms linear;
-  // animation-name: openBurgerMenu;
   border: none;
   background-color: var(--hero-bg);
   @media screen and (min-width: 768px) {
@@ -124,20 +121,17 @@
   }
 }
 .burger-menu {
-  animation-name: move;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  // animation-iteration-count: 2;
-
   position: absolute;
   z-index: 50;
-  right: 0;
+  right: -240px;
   top: 0;
   width: 250px;
   height: 100vh;
   background: var(--burger-bg);
 
   padding-top: 60px;
+  transform: translateX(-280px);
+  transition: transform 3000ms linear;
 }
 .burger-menu__top {
   display: flex;
@@ -194,12 +188,12 @@
     color: var(--hero-red-text);
   }
 }
-@keyframes move {
-  0% {
-    transform: translatex(100%);
-  }
+// @keyframes move {
+//   0% {
+//     transform: translatex(100%);
+//   }
 
-  100% {
-    transform: translatex(-100%);
-  }
-}
+//   100% {
+//     transform: translatex(-100%);
+//   }
+// }
