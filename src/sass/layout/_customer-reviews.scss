@@ -1,13 +1,13 @@
 
-  .container {
+  .container-customer-reviews {
       position: relative;
-      max-height: 550px;
-       @media screen and (min-width: 768px) {
-        height: 382px;
-      }
-      @media screen and (min-width: 1280px) {
-        height: 350px;
-      }
+      // max-height: 550px;
+      //  @media screen and (min-width: 768px) {
+      //   height: 382px;
+      // }
+      // @media screen and (min-width: 1280px) {
+      //   height: 350px;
+      // }
   }
 
   .swiper {
@@ -119,7 +119,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #C7133E;
+    background-color: var(--slider-points-accent);
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
@@ -134,7 +134,7 @@
         height: 4px;
         left: 14px;
         border-radius: 50%;
-        background-color: #C7133E;
+        background-color: var(--slider-points-accent);
         margin-bottom: 30px;
      }
      &::after {
@@ -145,7 +145,7 @@
         height: 4px;
         left: -14px;
         border-radius: 50%;
-        background-color: #C7133E;
+        background-color: var(--slider-points-accent);
         margin-bottom: 30px;
      }
   }
