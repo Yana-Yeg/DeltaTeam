@@ -1,13 +1,13 @@
-// .container {
-//     position: relative;
-//     max-height: 550px;
-//      @media screen and (min-width: 768px) {
-//       height: 382px;
-//     }
-//     @media screen and (min-width: 1280px) {
-//       height: 350px;
-//     }
-// }
+.container {
+  position: relative;
+  max-height: 550px;
+  @media screen and (min-width: 768px) {
+    height: 382px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 350px;
+  }
+}
 
 .swiper {
   width: 100%;
