@@ -1,6 +1,6 @@
 (() => {
     const refs = {
-        openModalBtn: document.querySelector('.our-location-open'),
+        openModalBtn: document.querySelector('.our-location-opener'),
         closeModalBtn: document.querySelector('.our-location-close'),
         modal: document.querySelector('.our-location'),
     };
