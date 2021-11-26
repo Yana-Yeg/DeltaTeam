@@ -1,12 +1,16 @@
-.container {
+.container-customer-reviews {
   position: relative;
-  max-height: 550px;
-  @media screen and (min-width: 768px) {
-    height: 382px;
-  }
-  @media screen and (min-width: 1280px) {
-    height: 350px;
-  }
+  // max-height: 550px;
+  //  @media screen and (min-width: 768px) {
+  //   height: 382px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   height: 350px;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   height: 350px;
+  // }
 }
 
 .swiper {
@@ -138,7 +142,34 @@
     height: 4px;
     left: -14px;
     border-radius: 50%;
-    background-color: #c7133e;
+    background-color: var(--slider-points-accent);
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 14px;
+    border-radius: 50%;
+    background-color: var(--slider-points-accent);
+    margin-bottom: 30px;
+  }
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: -14px;
+    border-radius: 50%;
+    background-color: var(--slider-points-accent);
     margin-bottom: 30px;
   }
 }
