@@ -198,6 +198,10 @@
     line-height: calc(18 / 12);
     color: var(--contacts-grey-text);
 
+    &:hover, &:focus {
+        color: #940729;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: calc(26 / 14);
@@ -282,7 +286,7 @@
     }
 }
 
-// _______________________________________
+// _______________________________________backdrop________________________________________
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -300,6 +304,7 @@
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// ____________________________________________LOCAL MODAL_________________________________________________________
 .our-location__modal {
     display: flex;
     flex-direction: column;
@@ -311,11 +316,11 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 20px;
-    background-color: #C2E297;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(225, 121, 146, 1) 100%);
 
     @media screen and (min-width: 768px) {
-        width: 400px;
+        width: auto;
         height: auto;
 
         .contacts-maps {
@@ -340,10 +345,10 @@
     width: 30px;
     height: 30px;
     background-color: var(--contacts-white-text);
-    border-color: #C2E297;
+    border-color: #d41443;
 
     &:hover, &:focus {
-        background-color: #79a83c;
+        background-color: #d41443;
         border-color: var(--contacts-white-text);
 
         .contacts-close {
@@ -356,7 +361,7 @@
     position: absolute;
     top: 5px;
     left: 6px;
-    fill: #C2E297;
+    fill: #d41443;
 }
 
 .modal-location {
@@ -366,23 +371,37 @@
     align-items: center;
     padding: 15px;
     background-color: inherit;
+
+    iframe {
+        border-radius: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 15px;
+    }
 }
 
 .modal-loc-text {
+    font-family: Titan One, serif;
     font-size: 20px;
     line-height: calc(30 / 25);
     margin-bottom: 30px;
-    color: var(--contacts-white-text);
+    color: #d41443;
     text-transform: uppercase;
     font-weight: 700;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
 }
 
 // __________________________________________________MODAL FRANCHIZEN_________________________
 .franchize__modal {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     position: absolute;
     padding: 20px 15px;
     top: 50%;
@@ -391,39 +410,30 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 20px;
-    background-color: #fff5f6;
-    width: 220px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(225, 121, 146, 1) 100%);
+    width: 320px;
 
     @media screen and (min-width: 768px) {
-        width: 400px;
-        height: auto;
-
-        .contacts-maps {
-            width: auto;
-        }
+        width: 440px;
+        padding: 20px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 500px;
-        height: 600px;
-
-        .contacts-maps {
-            width: 400px;
-            height: 450px;
-        }
     }
 }
 
 .our-franchize-close {
+    align-self: flex-end;
     position: relative;
     border-radius: 25px;
     width: 30px;
     height: 30px;
     background-color: var(--contacts-white-text);
-    border-color: #C2E297;
+    border-color: #d41443;
 
     &:hover, &:focus {
-        background-color: #79a83c;
+        background-color: #d41443;
         border-color: var(--contacts-white-text);
 
         .contacts-close {
@@ -432,15 +442,30 @@
     }
 }
 
+.modal-franchize {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .contacts-form-commit {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .modal-franchize-text {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-family: Titan One, serif;
+    font-size: 20px;
+    line-height: calc(30 / 25);
+    margin-bottom: 30px;
+    color: #d41443;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
 }
 
 .franchize-modal-field {
@@ -448,7 +473,56 @@
 }
 
 .franchize-modal-label {
+    font-family: Titan One, serif;
+    color: #d41443;
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+}
+
+.franchize-modal-input {
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+    width: 100%;
+
+    &:hover, &:focus &:active {
+        border: 3px solid #d41443;
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+
+.franchize-modal-button {
+    align-self: center;
+    width: 160px;
+    height: 45px;
+    margin-bottom: 10px;
+    background: var(--contacts-btn-gr);
+    border-radius: 22px;
+    border: none;
+    color: var(--contacts-white-text);
+
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+        margin-bottom: 0;
+        width: 190px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 200px;
+    }
+
+    &:hover, &:focus {
+        background-color: #940729;
+    }
+
+    .btn__icon {
+        stroke: white;
+        margin-left: 15px;
+    }
 }
