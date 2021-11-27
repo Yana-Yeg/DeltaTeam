@@ -1,0 +1,111 @@
+.gallery-title {
+  font-size: small;
+}
+
+.section-gallery {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to top, var(--background) 54%, var(--second-bg) 54%);
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+
+// .gallery__img {
+//   background-color: aqua;й
+// }
+
+.gallary__wrap {
+  display: flex;
+  margin-left: -2px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-left: -4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -5px;
+  }
+}
+
+.gallery__column {
+  margin-left: 2px;
+  @media screen and (min-width: 768px) {
+    margin-left: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 5px;
+  }
+}
+
+.gallery__item--top {
+  margin-bottom: 2px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 5px;
+  }
+}
+
+.gallery__column--a {
+  padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 87px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 142px;
+  }
+}
+.gallery__column--b {
+  padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 53px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 87px;
+  }
+}
+// .gallery__column--c {
+//   padding-top: 0;
+//   @media screen and (min-width: 768px) {
+//     padding-top: 0;
+//   }
+//   @media screen and (min-width: 1200px) {
+//   }
+// }
+.gallery__column--d {
+  padding-top: 28px;
+  @media screen and (min-width: 768px) {
+    padding-top: 61px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+  }
+}
+.gallery__column--e {
+  padding-top: 15px;
+  @media screen and (min-width: 768px) {
+    padding-top: 33px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 53px;
+  }
+}
+.gallery__column--f {
+  padding-top: 44px;
+  @media screen and (min-width: 768px) {
+    padding-top: 93px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 153px;
+  }
+}
+
+.gallery__item {
+  &:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
+}
