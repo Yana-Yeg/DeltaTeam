@@ -131,6 +131,7 @@
   }
 }
 .buy-btn-header__icon {
+  stroke: #d41443;
   margin-left: 12px;
 
   @media screen and (min-width: 1280px) {
@@ -190,6 +191,7 @@
   border-radius: 22px;
   border: none;
   color: #d41443;
+  stroke: #d41443;
 
   margin-bottom: 19px;
   &:hover,
