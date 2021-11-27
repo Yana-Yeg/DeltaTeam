@@ -468,34 +468,34 @@
     text-align: center;
 }
 
-.franchize-modal-field {
-    margin-bottom: 30px;
-}
+// .franchize-modal-field {
+//     margin-bottom: 30px;
+// }
 
-.franchize-modal-label {
-    font-family: Titan One, serif;
-    color: #d41443;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
+// .franchize-modal-label {
+//     font-family: Titan One, serif;
+//     color: #d41443;
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 25px;
+// }
 
-.franchize-modal-input {
-    font-family: DM Sans, sans-serif;
-    font-size: 16px;
-    border: none;
-    margin-top: 10px;
-    height: 50px;
-    border: 3px solid #ffffff;
-    border-radius: 6px;
-    width: 100%;
+// .franchize-modal-input {
+//     font-family: DM Sans, sans-serif;
+//     font-size: 16px;
+//     border: none;
+//     margin-top: 10px;
+//     height: 50px;
+//     border: 3px solid #ffffff;
+//     border-radius: 6px;
+//     width: 100%;
 
-    &:hover, &:focus &:active {
-        border: 3px solid #d41443;
-        outline: 0;
-        outline-offset: 0;
-    }
-}
+//     &:hover, &:focus &:active {
+//         border: 3px solid #d41443;
+//         outline: 0;
+//         outline-offset: 0;
+//     }
+// }
 
 .franchize-modal-button {
     align-self: center;
@@ -526,3 +526,58 @@
         margin-left: 15px;
     }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+  height: 40px;
+}
+.form-label {
+  position: absolute;
+  font-family: "DM sans", sans-serif;
+  color:  #940729;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding-left: 42px;
+  color: #d41443 ; 
+  transition: transform 250ms linear;
+}
+.form-input {
+  margin: 0;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 1.15;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-40px);
+  color: var(--contacts-btn-gr); 
+}
+.form-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
+  background-color: inherit;
+}
+.form-input:focus ~ .form-icon {
+  fill: var(--contacts-btn-gr);
+}
+
