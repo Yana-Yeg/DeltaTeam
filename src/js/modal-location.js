@@ -27,3 +27,27 @@
         refs.modal.classList.toggle('is-hidden');
     }
 })();
+
+
+
+
+
+// _____________________________product
+$(document).ready(function(){
+	$('.products-list-item__btn1').click(function(){
+		$('.content_block1').slideToggle(300);      
+		return false;
+	});
+});
+$(document).ready(function(){
+	$('.products-list-item__btn2').click(function(){
+		$('.content_block2').slideToggle(300);      
+		return false;
+	});
+});
+$(document).ready(function(){
+	$('.products-list-item__btn3').click(function(){
+		$('.content_block3').slideToggle(300);      
+		return false;
+	});
+});
