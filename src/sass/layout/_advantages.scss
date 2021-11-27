@@ -1,0 +1,123 @@
+.section-advantages {
+  padding-top: 85px;
+  padding-bottom: 50px;
+  background-color: var(--second-bg);
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+}
+
+.advantages-list {
+  margin-bottom: -38px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 38px;
+  padding-top: 66px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+.advantages-list__text--top {
+  position: relative;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-red-text);
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+
+.advantages-list__text--before-a {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 33px;
+    height: 50px;
+    background-image: url(..//images/advantages/ad1-mob-1x.png);
+    background-size: 33px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: 105px;
+    }
+  }
+}
+
+.advantages-list__text--before-b {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 50px;
+    height: 50px;
+    background-image: url(..//images/advantages/ad2-mob-1x.png);
+    background-size: 50px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: 105px;
+    }
+  }
+}
+
+.advantages-list__text--before-c {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 44px;
+    height: 50px;
+    background-image: url(..//images/advantages/ad3-mob-1x.png);
+    background-size: 44px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: 105px;
+    }
+  }
+}
+
+.advantages-list__text--bot {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--advantages-black-text);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
