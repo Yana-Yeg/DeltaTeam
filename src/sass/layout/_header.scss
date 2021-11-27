@@ -52,6 +52,20 @@
     color: var(--hero-red-text);
   }
 }
+.current::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+
+  display: inline-block;
+  content: ' ';
+
+  width: 100%;
+  height: 4px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+}
 .burger-btn-open {
   position: absolute;
   top: 25px;
@@ -96,25 +110,24 @@
     display: block;
     position: absolute;
     top: 38px;
-    right: 57px;
-
-    height: 44px;
-  }
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: 38px;
     right: 20px;
-    width: 159px;
-    height: 44px;
+    z-index: 30;
+
+    width: 160px;
+    height: 45px;
 
     background: #ffffff;
     border-radius: 22px;
-
     &:hover,
     &:focus {
       cursor: pointer;
       background: var(--button-bg-hover);
     }
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 38px;
+    right: 20px;
   }
 }
 .buy-btn-header__icon {
@@ -182,6 +195,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    background-color: var(--button-bg-hover);
   }
 }
 .buy-btn-burger__icon {

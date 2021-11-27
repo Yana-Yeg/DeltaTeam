@@ -18,6 +18,7 @@
   line-height: 1.15;
   text-transform: uppercase;
   width: 218px;
+  letter-spacing: 0.04em;
 
   margin-bottom: 19px;
 
@@ -25,6 +26,8 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.13;
+
+    width: 162px;
 
     margin-bottom: 20px;
   }
@@ -36,6 +39,7 @@
   }
 }
 .hero-title__accent {
+  letter-spacing: 0.04em;
   font-size: 48px;
   line-height: 0.95;
   color: var(--hero-red-text);
@@ -65,11 +69,11 @@
 }
 .hero-products-btn {
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
 
   width: 61.2px;
   height: 24px;
-  margin-right: 8px;
+  margin-right: 3px;
 
   color: var(--button-bg-main);
   background: var(--hero-red-text);
@@ -87,6 +91,7 @@
     height: 40px;
     font-size: 14px;
     line-height: 1.28;
+    margin-right: 15px;
   }
 }
 .hero-made-btn {
@@ -196,6 +201,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.15;
+    margin-bottom: 15px;
     &:after {
       top: -4px;
       right: -18px;
@@ -205,9 +211,11 @@
   }
 }
 .about-us__description {
+  font-family: DM Sans;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   text-align: right;
+  letter-spacing: 0;
 
   color: var(--hero-white-text);
 }
@@ -237,13 +245,11 @@
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.5;
+  letter-spacing: 0;
 
   margin-bottom: 7px;
 
   color: var(--hero-white-text);
-  @media screen and (min-width: 768px) {
-    margin-bottom: 7px;
-  }
   @media screen and (min-width: 1280px) {
     font-family: DM Sans;
     font-size: 14px;
@@ -263,6 +269,8 @@
   height: 18px;
   border-radius: 50%;
   border: none;
+  background-color: var(--button-bg-main);
+  margin-bottom: 7px;
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
@@ -270,6 +278,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    background: var(--button-bg-hover);
   }
 }
 .jug-milk__icon {
