@@ -358,7 +358,7 @@
 }
 
 // ____________________________BTN PRODUCTS__________________
-.products-list-item__btn {
+.products-list-item__btn1, .products-list-item__btn2, .products-list-item__btn3 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -384,5 +384,86 @@
         .products-list-item-btn__icon {
             fill: var(--products-white-text);
         }
+    }
+}
+
+// ______________________________DESCRIPTION TEXT_________________________________________________________
+.description-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: calc(28 / 18);
+    transform: translateY(0%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-top-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.flex-element {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.btn_hover {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.content_block1 {
+    color: var(--products-white-text);
+    display: none;
+    background-color: #FFB8CA;
+}
+
+.content_block2 {
+    color: var(--products-white-text);
+    display: none;
+    background-color: #F0D1A5;
+}
+
+.content_block3 {
+    color: var(--products-white-text);
+    background-color: #C2E297;
+    display: none;
+}
+
+.products_ingridients {
+    list-style: square;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 35px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
     }
 }
