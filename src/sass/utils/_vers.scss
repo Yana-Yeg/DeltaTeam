@@ -1,65 +1,65 @@
 :root {
-    // Main colors
-    --background: #FFFFFF;
-    --hero-bg: #FFB8CA;
-    --second-bg: #FFF5F6;
-    --burger-bg: #E17992;
-    --button-bg-main: #FFFFFF;
-    --button-bg-hover: #ECEBEB;
+  // Main colors
+  --background: #ffffff;
+  --hero-bg: #ffb8ca;
+  --second-bg: #fff5f6;
+  --burger-bg: #e17992;
+  --button-bg-main: #ffffff;
+  --button-bg-hover: #ecebeb;
 
-    //Hero
-    --hero-white-text: #FFFFFF;
-    --hero-red-text: #D41443;
-    --hero-hover-btn-red: #C7133E;
+  //Hero
+  --hero-white-text: #ffffff;
+  --hero-red-text: #d41443;
+  --hero-hover-btn-red: #c7133e;
 
-    // Products
-    --products-pink-text: #FFA5BA;
-    --products-red-text: #D41443;
-    --products-white-text: #FFFFFF;
+  // Products
+  --products-pink-text: #ffa5ba;
+  --products-red-text: #d41443;
+  --products-white-text: #ffffff;
 
-    // About
-    --about-pink-text: #FFA5BA;
-    --about-red-text: #D41443;
-    --about-black-text: #000000;
-    --about-grey-text: #907E82;
-    --about-white-text: #FFFFFF;
+  // About
+  --about-pink-text: #ffa5ba;
+  --about-red-text: #d41443;
+  --about-black-text: #000000;
+  --about-grey-text: #907e82;
+  --about-white-text: #ffffff;
 
-    // Advantages
-    --advantages-red-text: #D41443;
-    --advantages-black-text: #000000;
+  // Advantages
+  --advantages-red-text: #d41443;
+  --advantages-black-text: #000000;
 
-    // Slider
-    --slider-background: #FAFAFA;
-    --slider-black-text: #000000;
-    --slider-red-accent: #D31342;
-    --slider-points-accent: #C7133E;
+  // Slider
+  --slider-background: #fafafa;
+  --slider-black-text: #000000;
+  --slider-red-accent: #d31342;
+  --slider-points-accent: #c7133e;
 
-    // Contacts
-    --contacts-white-text: #FFFFFF;
-    --contacts-cafe-bg: #F0D1A5;
-    --contacts-foodtrack-bg: #C2E297;
-    --contacts-black-text: #000000;
-    --contacts-grey-text: #907E82;
-    --contacts-pink-text: #FFA5BA;
-    --contacts-items-bg: #FFFFFF;
-    --contacts-btn-gr: #D41342;
+  // Contacts
+  --contacts-white-text: #ffffff;
+  --contacts-cafe-bg: #f0d1a5;
+  --contacts-foodtrack-bg: #c2e297;
+  --contacts-black-text: #000000;
+  --contacts-grey-text: #907e82;
+  --contacts-pink-text: #ffa5ba;
+  --contacts-items-bg: #ffffff;
+  --contacts-btn-gr: #d41342;
   // Footer
-  --footer-red-text: #D41443;
-    --footer-white-text: #FFFFFF;
-    --footer-pink-text: #FEA5BB;
-    --footer-black-text: #000000;
-    --footer-grey-text: #907E82;
-    --footer-icons-white: #FFFFFF;
-    --footer-icons-bg: #FEA5BB;
-    --footer-icons-hover-bg: #D41443;
-    --footer-btn-hover-grey: #ECEBEB;
-    --footer-btn-hover-red: #D41342;
+  --footer-red-text: #d41443;
+  --footer-white-text: #ffffff;
+  --footer-pink-text: #fea5bb;
+  --footer-black-text: #000000;
+  --footer-grey-text: #907e82;
+  --footer-icons-white: #ffffff;
+  --footer-icons-bg: #fea5bb;
+  --footer-icons-hover-bg: #d41443;
+  --footer-btn-hover-grey: #ecebeb;
+  --footer-btn-hover-red: #d41342;
 
-    // Burger
-    --burger-red-text: #D41443;
-    --burger-white-text: #FFFFFF;
+  // Burger
+  --burger-red-text: #d41443;
+  --burger-white-text: #ffffff;
 
-    /* для задания сетки в классы grid */
-    --gap: 30px;
-    --item: 1;
+  /* для задания сетки в классы grid */
+  --gap: 30px;
+  --item: 1;
 }
