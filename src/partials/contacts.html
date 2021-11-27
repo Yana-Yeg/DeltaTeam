@@ -18,7 +18,7 @@
                     <div class="contacts-worktime__holyday">
                         <p class="contacts-worktime__day">Saturday - Sunday</p>
                         <p class="contacts-worktime__time">08:00 AM - 16:00 PM</p>
-                    </div> 
+                    </div>
                 </div>
                 <div class="contacts-info">
                     <a href="tel:+610383766284" class="contacts-info__tel">+61(0) 383 766 284</a>
@@ -76,7 +76,7 @@
             <button class="btnlocation contacts-section__btnlocation">
                 Our Locations
                 <svg class="btn__icon" width="10" height="10">
-                    <use  href="./images/sprite.svg#vector-1"></use>
+                    <use href="./images/sprite.svg#vector-1"></use>
                 </svg>
             </button>
             <button class="btnfranchize contacts-section__btnfranchize our-location-open">
@@ -86,37 +86,37 @@
                 </svg>
             </button>
         </div>
-        
+
     </div>
 
 
-<!-- -------------------------------------------------------------------------modal -->
+    <!-- -------------------------------------------------------------------------modal -->
 
-<div class="is-hidden our-location backdrop">
-    <div class="our-location__modal">
-        <button type="submit" class="our-location-close">
-            <svg class="contacts-close">
-                <use href="./images/sprite.svg#icon-close_icon" width="15" height="15"></use>
-            </svg>
-        </button>
-        <div class="modal-location">
-            <p class="modal-loc-text">Our Location</p>
-            <iframe class="contacts-maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.772728998915!2d-117.61410638493697!3d33.42620684787254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e428d225041%3A0x3cd43303554b967c!2sMitchell&#39;s%20Ice%20Cream!5e0!3m2!1sru!2sua!4v1637781091922!5m2!1sru!2sua"
-            width="260" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>  
+    <div class="is-hidden our-location backdrop">
+        <div class="our-location__modal">
+            <button type="submit" class="our-location-close">
+                <svg class="contacts-close">
+                    <use href="./images/sprite.svg#icon-close_icon" width="15" height="15"></use>
+                </svg>
+            </button>
+            <div class="modal-location">
+                <p class="modal-loc-text">Our Location</p>
+                <iframe class="contacts-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.772728998915!2d-117.61410638493697!3d33.42620684787254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e428d225041%3A0x3cd43303554b967c!2sMitchell&#39;s%20Ice%20Cream!5e0!3m2!1sru!2sua!4v1637781091922!5m2!1sru!2sua"
+                    width="260" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </div>
-</div>
-<div class="is-hidden our-franchize backdrop">
-    <div class="franchize__modal">
-        <button type="submit" class="our-franchize-close">
-            <svg class="contacts-close">
-                <use href="./images/sprite.svg#icon-close_icon" width="15" height="15"></use>
-            </svg>
-        </button>
-        <div class="modal-franchize">
-            <p class="modal-franchize-text">Leave us fedback</p>
-            <form action="# " class="contacts-form-commit">
+    <div class="is-hidden our-franchize backdrop">
+        <div class="franchize__modal">
+            <button type="submit" class="our-franchize-close">
+                <svg class="contacts-close">
+                    <use href="./images/sprite.svg#icon-close_icon" width="15" height="15"></use>
+                </svg>
+            </button>
+            <div class="modal-franchize">
+                <p class="modal-franchize-text">Leave us fedback</p>
+                <!-- <form action="# " class="contacts-form-commit">
                 <div class="franchize-modal-field">
                     <label class="franchize-modal-label" for="user-name">
                         Name
@@ -139,8 +139,39 @@
                     </label>
                 </div>
                 <button class="franchize-modal-button" type="submit">Send</button>
-            </form>
+            </form> -->
+                <form class="form" autocomplete="off">
+
+                    <div class="form-field">
+                        <input type="text" class="form-input" name="name" id="text" placeholder=" ">
+                        <label for="text" class="form-label">Name</label>
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#icon-ice" width="18">
+                                <use>
+                        </svg>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="tel" class="form-input" name="name" id="tel" placeholder=" ">
+                        <label for="tel" class="form-label">Telephone</label>
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#icon-ice" width="18">
+                                <use>
+                        </svg>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="email" class="form-input" name="name" id="email" placeholder=" ">
+                        <label for="email" class="form-label">Email</label>
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#icon-ice" width="18">
+                                <use>
+                        </svg>
+                    </div>
+                    <button class="franchize-modal-button" type="submit">Send</button>
+                </form>
+
+            </div>
         </div>
     </div>
-</div>
 </section>
