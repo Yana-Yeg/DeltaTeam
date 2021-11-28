@@ -313,3 +313,16 @@
     right: 14px;
   }
 }
+// animation
+.animate__animated.animate__lightSpeedInLeft {
+  animation-delay: 0.8s;
+}
+.animate__animated.animate__lightSpeedInRight {
+  animation-delay: 0.8s;
+}
+.animate__animated.animate__zoomIn {
+  animation-delay: 0.7s;
+  @media screen and (min-width: 480px) {
+    animation-delay: 1.4s;
+  }
+}
