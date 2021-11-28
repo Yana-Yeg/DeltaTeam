@@ -238,3 +238,181 @@
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
 }
+
+
+// __________________________________________________MODAL FRANCHIZEN_________________________
+.buy__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 20px 15px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(225, 121, 146, 1) 100%);
+    width: 320px;
+
+    @media screen and (min-width: 768px) {
+        width: 440px;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 500px;
+    }
+}
+
+.buy-modal-close {
+    align-self: flex-end;
+    position: relative;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--contacts-white-text);
+    border-color: #d41443;
+
+    &:hover, &:focus {
+        background-color: #d41443;
+        border-color: var(--contacts-white-text);
+
+        .contacts-close {
+            fill: var(--contacts-white-text);
+        }
+    }
+}
+
+.modal-buy {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contacts-form-commit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-buy-text {
+    font-family: "Titan One", serif;
+    font-size: 20px;
+    line-height: calc(30 / 25);
+    margin-bottom: 30px;
+    color: #d41443;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
+.buy-now-modal input,
+.buy-now-modal select {
+  color: #d41443;
+}
+
+.buynow-modal-button {
+    align-self: center;
+    width: 160px;
+    height: 45px;
+    margin-bottom: 10px;
+    background: var(--contacts-btn-gr);
+    border-radius: 22px;
+    border: none;
+    color: var(--contacts-white-text);
+    &:focus, &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+        margin-bottom: 0;
+        width: 190px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 200px;
+    }
+
+    &:hover, &:focus {
+        background-color: #940729;
+    }
+
+    .btn__icon {
+        stroke: white;
+        margin-left: 15px;
+    }
+}
+.form-buynow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-field-buynow {
+  position: relative;
+  margin-bottom: 30px;
+  height: 40px;
+}
+.form-label-buynow {
+  position: absolute;
+  font-family: "DM sans", sans-serif;
+  color:  #940729;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding-left: 42px;
+  color: #d41443 ; 
+  transition: transform 250ms linear;
+}
+.form-label-buynowX {
+  position: absolute;
+  font-family: "DM sans", sans-serif;
+  color:  #940729;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  top: 50%;
+  left: 0;
+  transform: translateY(-40px);
+  padding-left: 42px;
+  color: #d41443 ; 
+  transition: transform 250ms linear;
+}
+.form-input-buynow {
+  margin: 0;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 1.15;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+.form-input-buynow:focus + .form-label-buynow,
+.form-input-buynow:not(:placeholder-shown) + .form-label-buynow {
+  transform: translateY(-40px);
+  color: var(--contacts-btn-gr); 
+}
+.form-icon-buynow {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
+  background-color: inherit;
+}
+.form-input-buynow:focus ~ .form-icon-buynow {
+  fill: var(--contacts-btn-gr);
+}
+

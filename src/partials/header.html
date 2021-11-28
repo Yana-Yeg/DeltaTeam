@@ -33,7 +33,7 @@
                 <use href="./images/sprite.svg#icon-Burger"></use>
             </svg>
         </button>
-        <button class="buy-btn-header" type="button">Buy now
+        <button class="buy-btn-header buy-modal-open" type="button">Buy now
             <svg class="buy-btn-header__icon" width="10" height="10">
                 <use href="./images/sprite.svg#vector-1"></use>
             </svg>
@@ -71,6 +71,73 @@
                             <a class="burger-menu__link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="is-hidden buy-now-modal backdrop-byu">
+            <div class="buy__modal">
+                <button type="submit" class="buy-modal-close">
+                    <svg class="contacts-close">
+                        <use href="./images/sprite.svg#icon-close_icon" width="15" height="15"></use>
+                    </svg>
+                </button>
+                <div class="modal-buy">
+                    <p class="modal-buy-text">Your order</p>
+                    <form class="form-buynow" autocomplete="off">
+
+                        <div class="form-field-buynow">
+                            <label for="product" class=" form-label-buynowX">Choose product</label>
+                            <select class="form-input-buynow" id="product" name="product">
+                                <option value="" selected> </option>
+                                <option value="IceCream">IceCream</option>
+                                <option value="IceCoffee">IceCoffee</option>
+                                <option value="Milkshake">Milkshake</option>
+                                <option value="All">All</option>
+                            </select>
+                            <svg class="form-icon-buynow">
+                                <use href="./images/sprite.svg#icon-ice" width="18">
+                                    <use>
+                            </svg>
+                        </div>
+
+                        <div class="form-field-buynow">
+                            <input type="number" class="form-input-buynow" name="number" id="number" placeholder=" ">
+                            <label for="number" class="form-label-buynowX">Number of units</label>
+                            <svg class="form-icon-buynow">
+                                <use href="./images/sprite.svg#icon-ice" width="18">
+                                    <use>
+                            </svg>
+                        </div>
+
+                        <div class="form-field-buynow">
+                            <input type="time" class="form-input-buynow" name="time" id="time" placeholder=" ">
+                            <label for="time" class="form-label-buynow">Time of delivery</label>
+                            <svg class="form-icon-buynow">
+                                <use href="./images/sprite.svg#icon-ice" width="18">
+                                    <use>
+                            </svg>
+                        </div>
+
+                        <div class="form-field-buynow">
+                            <input type="text" class="form-input-buynow" name="name" id="text" placeholder=" ">
+                            <label for="text" class="form-label-buynow">Name</label>
+                            <svg class="form-icon-buynow">
+                                <use href="./images/sprite.svg#icon-ice" width="18">
+                                    <use>
+                            </svg>
+                        </div>
+
+                        <div class="form-field-buynow">
+                            <input type="tel" class="form-input-buynow" name="name" id="tel" placeholder=" ">
+                            <label for="tel" class="form-label-buynow">Telephone</label>
+                            <svg class="form-icon-buynow">
+                                <use href="./images/sprite.svg#icon-ice" width="18">
+                                    <use>
+                            </svg>
+                        </div>
+
+                        <button class="buynow-modal-button" type="submit">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
