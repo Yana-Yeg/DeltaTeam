@@ -82,6 +82,8 @@
     &:focus {
       cursor: pointer;
       background: var(--hero-hover-btn-red);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   @media screen and (min-width: 1280px) {
@@ -109,6 +111,8 @@
     &:focus {
       cursor: pointer;
       background: var(--button-bg-hover);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   @media screen and (min-width: 1280px) {
@@ -125,7 +129,7 @@
   width: 346px;
   height: 344px;
   top: 83px;
-  left: 36px;
+  right: -62px;
   border-radius: 50%;
   background-color: #ffa5ba;
   @media screen and (min-width: 768px) {
@@ -281,6 +285,8 @@
   &:focus {
     cursor: pointer;
     background: var(--button-bg-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .jug-milk__icon {

@@ -27,3 +27,18 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+            // Backdrop for header
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector('.burger-btn-open'),
+        closeModalBtn: document.querySelector('.burger-btn-close'),
+        modal: document.querySelector('.header-backdrop'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle('backdrop-head');
+    }
+})();
