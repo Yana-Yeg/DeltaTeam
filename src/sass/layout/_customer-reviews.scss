@@ -59,29 +59,40 @@
     width: 100%;
     height: 100%;
     background-size: 100%;
-    background-image: url(../images/customer-reviews/cr1-1x.png);
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/customer-reviews/cr1-2x.png);
-      }
+    background-image: url(../images/yana3.jpg);
+    border-radius: 50%;
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //       background-image: url(../images/customer-reviews/cr1-2x.png);
+    //   }
   }
 
   .swiper-slide__img2 {
-    background-image: url(../images/customer-reviews/cr2-1x.png);
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/customer-reviews/cr2-2x.png);
-      }
+    background-image: url(../images/vladK.jpg);
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //       background-image: url(../images/customer-reviews/cr2-2x.png);
+    //   }
   }
   .swiper-slide__img3 {
-    background-image: url(../images/customer-reviews/cr3-1x.png);
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/customer-reviews/cr3-2x.png);
-      }
+    background-image: url(../images/romaG.jpg);
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //       background-image: url(../images/customer-reviews/cr3-2x.png);
+    //   }
+  }
+  .swiper-slide__img4 {
+    background-image: url(../images/yevhenii-mancchuk.jpg);
+    background-repeat: no-repeat;
+  }
+  .swiper-slide__img5 {
+    background-image: url(../images/evgenOp.jpg);
+  }
+  .swiper-slide__img6 {
+    background-image: url(../images/vladF.jpg);
   }
 
   .swiper-slide__discription {
