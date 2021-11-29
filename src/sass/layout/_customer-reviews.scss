@@ -197,10 +197,10 @@
 
 
   .swiper-slide__text {
-    margin-bottom: 37px;
+    // margin-bottom: 37px;
     @include font (14px, 1.86, 500, 0.04em);
     @media screen and (min-width: 768px) {
-        margin-bottom: 47px;
+        margin-bottom: 40px;
         @include font (16px, 1.86, 500, 0.04em);
       }
       @media screen and (min-width: 1280px) {
