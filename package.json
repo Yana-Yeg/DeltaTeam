@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Yana-Yeg.github.io/DeltaTeam",
+  "homepage": "https://Yana-Yeg.github.io/Icecream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /DeltaTeam/"
+    "build": "parcel build src/*.html --public-url /Icecream/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/DeltaTeam"
+    "url": "git+https://github.com/goitacademy/Icecream"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -26,3 +26,5 @@
     "sass": "^1.32.8"
   }
 }
+
+
